@@ -35,14 +35,14 @@ app.layout = html.Div([
             options=dropdown_options,
             value='Select Statistics',
             placeholder='Select a report type',
-            style={"width": "80%", "padding": "3px", "font-size": "20px", "textAlign": "center"}
+            style={"width": "80%", "padding": "3px", "font-size": "25px", "textAlign": "center"}
         )
     ]),
     html.Div(dcc.Dropdown(
         id='select-year',
         options=[{'label': i, 'value': i} for i in year_list],
         value='Select Year',
-        style={"width": "80%", "padding": "3px", "font-size": "20px", "textAlign": "center"}
+        style={"width": "80%", "padding": "3px", "font-size": "25px", "textAlign": "center"}
     )),
     # Container for displaying output (graphs)
     html.Div(id='output-container', className='chart-grid', style={"display": "flex"})
